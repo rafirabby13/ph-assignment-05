@@ -8,6 +8,7 @@ valueById("history").addEventListener("click", function () {
   valueById("donation").classList.add('btn-outline')
   valueById("donation").classList.add('border-2')
   valueById("donation").classList.add('border-[#11111170]')
+  valueById("history-container").classList.remove('hidden')
 });
 
 valueById("donation").addEventListener("click", function () {
@@ -20,4 +21,6 @@ valueById("donation").addEventListener("click", function () {
   valueById("donation").classList.remove('btn-outline')
   valueById("donation").classList.remove('border-2')
   valueById("donation").classList.remove('border-[#11111170]')
+  valueById("history-container").classList.add('hidden')
+
 });

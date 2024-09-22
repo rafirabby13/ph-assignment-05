@@ -19,3 +19,9 @@ function add(num1, num2) {
 function substract(a, b) {
   return a - b;
 }
+
+function currentDate(){
+  let date = new Date();
+  return date;
+}
+
