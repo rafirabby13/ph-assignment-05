@@ -1,3 +1,4 @@
+const noakhaliBtn = valueById('noakhali-btn')
 document.getElementById("noakhali-btn").addEventListener("click", function () {
   let navValue = getElementInnerHtmlById("nav-value");
   let noakhaliInput = inputValue("noakhali-input");
@@ -21,7 +22,10 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
     div.classList.add('shadow-xl')
 
     historyContainer.appendChild(div);
+    noakhaliBtn.setAttribute('onclick', my_modal_1.showModal())
   } else {
+    console.log('object');
     alert("Invalid Donation Amount");
+    
   }
 });

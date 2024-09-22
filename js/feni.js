@@ -1,3 +1,4 @@
+const feniBtn = document.getElementById("feni-btn")
 document.getElementById("feni-btn").addEventListener("click", function () {
     let navValue = getElementInnerHtmlById("nav-value");
     let feniInput = inputValue("feni-input");
@@ -21,6 +22,7 @@ document.getElementById("feni-btn").addEventListener("click", function () {
     div.classList.add('shadow-xl')
 
     historyContainer.appendChild(div);
+   feniBtn.setAttribute('onclick', my_modal_1.showModal())
     } else {
       alert("Invalid Donation Amount");
     }
