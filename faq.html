@@ -8,15 +8,25 @@
             href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
             rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+            rel="stylesheet">
+        <style>
+                 .lexend{
+                font-family: "Lexend", sans-serif;
+                 }
+                </style>
+        <title>FAQ</title>
     </head>
-    <body>
+    <body class="lexend">
         <header class="sticky top-0 ">
             <div class="bg-[#F9F7F3] backdrop-filter ">
                 <nav
                     class="max-w-[95%] lg:max-w-[80%] mx-auto flex items-center justify-between py-11 ">
                     <button id="home"
-                        class="btn bg-[#B4F461] text-[#111111] font-semibold text-lg">Home</button>
+                        class="btn bg-[#B4F461] text-[#111111] font-semibold text-lg" >Home</button>
                     <div class="flex items-center gap-4">
                         <img src="./assets/logo.png" alt>
                         <h1
@@ -25,7 +35,7 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <img src="./assets/coin.png" alt>
-                        <p class="text-[#11111170] font-medium text-lg">
+                        <p class="text-[#111111] font-medium text-lg lg:text-xl">
                             <span id="nav-value">5500</span>
                             <span>BDT</span>
                         </p>
@@ -33,17 +43,13 @@
 
                 </nav>
             </div>
-            <div
-                class="pt-20 pb-8 flex justify-center gap-4 bg-white backdrop-filter backdrop-blur-lg bg-opacity-65">
-                <button
-                    class="btn border-[#B4F461] bg-[#B4F461] text-[#111111] font-semibold text-lg">Donation</button>
-
-                <button
-                    class="btn btn-outline btn border-[#11111130]  text-[#11111170] font-semibold text-lg">History</button>
-
-            </div>
+            
         </header>
         <main class="max-w-[95%] lg:max-w-[80%] mx-auto">
+            <div class="flex items-center gap-4 py-16">
+                <h1 class="font-bold text-[#111111] text-6xl">Important FAQ</h1>
+                <img class="w-16" src="./assets/faq.png" alt="">
+            </div>
             <div class="join join-vertical w-full">
                 <div
                     class="collapse collapse-arrow join-item border-base-300 border">
@@ -51,7 +57,7 @@
                     <div class="collapse-title text-xl font-medium">What is the
                         Document Object Model (DOM)?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p>Document Object Model (DOM) allows developers to interact and manipulate the structure, content and style of  web pages.It represents entire HTML as a tree structure.</p>
                     </div>
                 </div>
                 <div
@@ -60,27 +66,50 @@
                     <div class="collapse-title text-xl font-medium">How do you
                         select an element from the DOM?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <ul>
+                            <li>document.getElementById()</li>
+                            <li>document.getElementsByClassName()</li>
+                            <li>document.querySelector()</li>
+                            <li>document.querySelectorAll()</li>
+                            <li>document.getElementsByTagName()</li>
+                        </ul>
                     </div>
                 </div>
                 <div
                     class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium"> What is
+                    <div class="collapse-title text-xl font-medium">What is
                         event delegation in the context of the DOM, and why is
                         it useful?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p>If there is multiple children of a parent in HTML, than we use delegation.In delegation, event listener added to the parent rather to children. The event listener can capture events triggered by its children.</p>
                     </div>
                 </div>
                 <div
                     class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium"> How do you
+                    <div class="collapse-title text-xl font-medium">How do you
                         manipulate an element's attributes and styles using the
                         DOM?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <h3>Attributes can be manipulated using methods like getAttribute(), setAttribute(), and removeAttribute().
+                            Styles can be directly manipulated using the style property or by managing CSS classes with classList.</h3>
+                        <p>Attributes:</p>
+                        <ul>
+                            <li>element.setAttribute(name, value)</li>
+                            <li>element.getAttribute(name)</li>
+                            <li>element.removeAttribute(name)</li>
+                        </ul>
+                        <p>styles:</p>
+                        <ul>
+                            <li>element.style.color='red</li>
+                            <li>element.style.backgroundColor = "blue"</li>
+                        </ul>
+                        <p>Class:</p>
+                        <ul>
+                            <li>element.classList.add(class);</li>
+                            element.classList.remove(class);
+                        </ul>
                     </div>
                 </div>
             </div>

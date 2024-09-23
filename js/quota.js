@@ -3,7 +3,7 @@ document.getElementById("quota-btn").addEventListener("click", function () {
   let navValue = getElementInnerHtmlById("nav-value");
   let quotaInput = inputValue("quota-input");
   let quotaValue = getElementInnerHtmlById("quota-value");
-  if (!isNaN(quotaInput) && navValue > quotaInput) {
+  if (!isNaN(quotaInput) && navValue > quotaInput && quotaInput>0) {
     let quotaTotal = add(quotaValue, quotaInput);
     let remainingNavValue = substract(navValue, quotaInput);
     valueById("quota-value").innerHTML = quotaTotal;

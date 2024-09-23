@@ -3,7 +3,7 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
   let navValue = getElementInnerHtmlById("nav-value");
   let noakhaliInput = inputValue("noakhali-input");
   let noakhaliValue = getElementInnerHtmlById("noakhali-value");
-  if (!isNaN(noakhaliInput) && navValue > noakhaliInput) {
+  if (!isNaN(noakhaliInput) && navValue > noakhaliInput && noakhaliInput>0) {
     let noakhaliTotal = add(noakhaliValue, noakhaliInput);
     let remainingNavValue = substract(navValue, noakhaliInput);
     valueById("noakhali-value").innerHTML = noakhaliTotal;
