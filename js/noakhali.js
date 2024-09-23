@@ -12,14 +12,13 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
     let noakhaliTitle = valueById("noakhali-title").innerText;
     const div = document.createElement("div");
     div.innerHTML += `
-    <h1 class="text-3xl font-bold">${noakhaliInput} taka donated for ${noakhaliTitle}</h1>
-    <h2 class="text-xl font-bold">${currentDate()}</h2>
+    <h1 class="text-xl text-[#111111] font-bold mb-4">${noakhaliInput} taka donated for ${noakhaliTitle}</h1>
+    <h2 class="text-lg font-light text-[#111111]">${currentDate()}</h2>
     `;
     let historyContainer = valueById("history-container");
-    div.classList.add('p-4')
+    div.classList.add('p-8')
     div.classList.add('border-2')
     div.classList.add('rounded-lg')
-    div.classList.add('shadow-xl')
 
     historyContainer.appendChild(div);
     noakhaliBtn.setAttribute('onclick', my_modal_1.showModal())
