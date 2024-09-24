@@ -14,7 +14,7 @@ document.getElementById("cyclone-btn").addEventListener("click", function () {
     let cycloneTitle = valueById("cyclone-title").innerText;
     const div = document.createElement("div");
     div.innerHTML += `
-    <h1 class="text-xl font-bold text-[#111111] mb-4">${cycloneInput} taka donated for ${cycloneTitle}</h1>
+    <h1 class="text-xl font-bold text-[#111111] mb-4">${cycloneInput} Taka is Donated for ${cycloneTitle}</h1>
     <h2 class="text-lg font-light text-[#111111]">${currentDate()}</h2>
     `;
     let historyContainer = valueById("history-container");

@@ -15,7 +15,7 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
       let noakhaliTitle = valueById("noakhali-title").innerText;
       const div = document.createElement("div");
       div.innerHTML += `
-    <h1 class="text-xl text-[#111111] font-bold mb-4">${noakhaliInput} taka donated for ${noakhaliTitle}</h1>
+    <h1 class="text-xl text-[#111111] font-bold mb-4">${noakhaliInput} Taka is Donated for ${noakhaliTitle}</h1>
     <h2 class="text-lg font-light text-[#111111]">${currentDate()}</h2>
     `;
       let historyContainer = valueById("history-container");

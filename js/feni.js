@@ -14,7 +14,7 @@ document.getElementById("feni-btn").addEventListener("click", function () {
     let feniTitle = valueById("feni-title").innerText;
     const div = document.createElement("div");
     div.innerHTML += `
-    <h1 class="text-xl font-bold text-[#111111] mb-4">${feniInput} taka donated for ${feniTitle}</h1>
+    <h1 class="text-xl font-bold text-[#111111] mb-4">${feniInput} Taka is Donated for ${feniTitle}</h1>
     <h2 class="text-lg font-light text-[#111111]">${currentDate()}</h2>
     `;
     let historyContainer = valueById("history-container");
