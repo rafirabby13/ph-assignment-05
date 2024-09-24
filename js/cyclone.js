@@ -5,7 +5,7 @@ document.getElementById("cyclone-btn").addEventListener("click", function () {
   let cycloneInputwithoutValue = valueById("cyclone-input");
   let cycloneValue = getElementInnerHtmlById("cyclone-value");
   if (!isNaN(cycloneInputwithoutValue.value)) {
-    if (navValue > cycloneInput && cycloneInput > 0) {
+    if (navValue >= cycloneInput && cycloneInput > 0) {
     let cycloneTotal = add(cycloneValue, cycloneInput);
     let remainingNavValue = substract(navValue, cycloneInput);
     valueById("cyclone-value").innerHTML = cycloneTotal;

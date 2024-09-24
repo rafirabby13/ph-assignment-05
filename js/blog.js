@@ -23,6 +23,6 @@
     let goToFAQ = document.getElementById('blog');
     if (goToFAQ) {
         goToFAQ.addEventListener('click', function () {
-            window.location.href = '../faq.html';
+            window.location.href = '../blog.html';
         });
     }

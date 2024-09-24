@@ -5,7 +5,7 @@ document.getElementById("feni-btn").addEventListener("click", function () {
   let feniInputwithoutValue = valueById("feni-input");
   let feniValue = getElementInnerHtmlById("feni-value");
   if (!isNaN(feniInputwithoutValue.value)) {
-    if (navValue > feniInput && feniInput > 0) {
+    if (navValue >= feniInput && feniInput > 0) {
     let feniTotal = add(feniValue, feniInput);
     let remainingNavValue = substract(navValue, feniInput);
     valueById("feni-value").innerHTML = feniTotal;

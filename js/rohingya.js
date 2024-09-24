@@ -5,7 +5,7 @@ document.getElementById("rohingya-btn").addEventListener("click", function () {
   let rohingyaInputwithoutValue = valueById("rohingya-input");
   let rohingyaValue = getElementInnerHtmlById("rohingya-value");
   if (!isNaN(rohingyaInputwithoutValue.value)) {
-    if (navValue > rohingyaInput && rohingyaInput > 0) {
+    if (navValue >= rohingyaInput && rohingyaInput > 0) {
     let rohingyaTotal = add(rohingyaValue, rohingyaInput);
     let remainingNavValue = substract(navValue, rohingyaInput);
     valueById("rohingya-value").innerHTML = rohingyaTotal;

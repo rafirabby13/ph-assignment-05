@@ -6,7 +6,7 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
 
   let noakhaliValue = getElementInnerHtmlById("noakhali-value");
   if (!isNaN(noakhaliInputwithoutValue.value)) {
-    if (navValue > noakhaliInput && noakhaliInput > 0) {
+    if (navValue >= noakhaliInput && noakhaliInput > 0) {
       let noakhaliTotal = add(noakhaliValue, noakhaliInput);
       let remainingNavValue = substract(navValue, noakhaliInput);
       valueById("noakhali-value").innerHTML = noakhaliTotal;
