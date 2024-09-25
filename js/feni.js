@@ -24,6 +24,7 @@ document.getElementById("feni-btn").addEventListener("click", function () {
 
     historyContainer.appendChild(div);
     feniBtn.setAttribute("onclick", my_modal_1.showModal());
+    feniInputwithoutValue.value=''
     }
     else {
       alert("Invalid Donation Amount");

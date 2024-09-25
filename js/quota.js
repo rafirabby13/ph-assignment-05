@@ -27,6 +27,7 @@ document.getElementById("quota-btn").addEventListener("click", function () {
 
       historyContainer.appendChild(div);
       quotaBtn.setAttribute("onclick", my_modal_1.showModal());
+      quotaInputwithoutValue.value=''
     } else {
       alert("Invalid Donation Amount");
     }

@@ -24,6 +24,7 @@ document.getElementById("rohingya-btn").addEventListener("click", function () {
 
     historyContainer.appendChild(div);
     rohingyaBtn.setAttribute("onclick", my_modal_1.showModal());
+    rohingyaInputwithoutValue.value=''
     }
     else {
       alert("Invalid Donation Amount");

@@ -24,6 +24,7 @@ document.getElementById("rebuilding-btn").addEventListener("click", function () 
 
     historyContainer.appendChild(div);
     rebuildingBtn.setAttribute("onclick", my_modal_1.showModal());
+    rebuildingInputwithoutValue.value=''
     }
     else {
       alert("Invalid Donation Amount");

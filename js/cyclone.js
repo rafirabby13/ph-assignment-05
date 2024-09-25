@@ -24,6 +24,7 @@ document.getElementById("cyclone-btn").addEventListener("click", function () {
 
     historyContainer.appendChild(div);
     cycloneBtn.setAttribute("onclick", my_modal_1.showModal());
+    cycloneInputwithoutValue.value=''
     }
     else {
       alert("Invalid Donation Amount");

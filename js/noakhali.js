@@ -25,6 +25,7 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
 
       historyContainer.appendChild(div);
       noakhaliBtn.setAttribute("onclick", my_modal_1.showModal());
+      noakhaliInputwithoutValue.value=''
     } else {
       console.log("object");
       alert("Invalid Donation Amount");
